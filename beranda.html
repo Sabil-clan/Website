@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami - DarkClan</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    .navbar, footer {
+      background-color: #1f1f1f;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      border-bottom: 1px solid #333;
+      padding: 12px 20px;
+    }
+    a.nav-link {
+      color: #ccc !important;
+    }
+    a.nav-link:hover {
+      color: #fff !important;
+    }
+    .team-photo {
+      width: 250px;
+      border: 2px solid #666;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .team-photo:hover {
+      transform: scale(1.05);
+    }
+    .modal-img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="#">
+        <img src="dark.jpg" width="50px" class="rounded-circle" alt="Logo"> Dark
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Tentang Kami</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="mb-4">
+          Kami adalah tim kreatif di balik <strong>DarkClan</strong>, berkomitmen untuk menghadirkan gaya yang berani dan berbeda.
+          Dengan semangat kerja dan kekompakan, kami membangun toko online ini sebagai tempat terbaik untuk fashion modern.
+        </p>
+
+        <!-- Galeri Foto -->
+        <div class="row g-4 justify-content-center">
+          <!-- Foto 1 -->
+          <div class="col-6 col-sm-4">
+            <img src="Gambar/WhatsApp Image 2025-06-16 at 20.29.45.jpeg" alt="Tim 1"
+                 class="img-fluid team-photo"
+                 data-bs-toggle="modal" data-bs-target="#modalFoto"
+                 onclick="setModalImage(this.src)">
+          </div>
+          <!-- Foto 2 -->
+          <div class="col-6 col-sm-4">
+            <img src="Gambar/WhatsApp Image 2025-06-16 at 20.38.39.jpeg" alt="Tim 2"
+                 class="img-fluid team-photo"
+                 data-bs-toggle="modal" data-bs-target="#modalFoto"
+                 onclick="setModalImage(this.src)">
+          </div>
+          <!-- Foto 3 -->
+          <div class="col-6 col-sm-4">
+            <img src="Gambar/WhatsApp Image 2025-06-16 at 20.38.39 (2).jpeg" alt="Tim 3"
+                 class="img-fluid team-photo"
+                 data-bs-toggle="modal" data-bs-target="#modalFoto"
+                 onclick="setModalImage(this.src)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Foto -->
+  <div class="modal fade" id="modalFoto" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-center p-3">
+        <img id="modalImage" src="" alt="Foto Tim" class="modal-img">
+        <button type="button" class="btn btn-outline-light mt-3" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5">
+    <p>&copy; 2025 DarkClan. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script Modal -->
+  <script>
+    function setModalImage(src) {
+      document.getElementById('modalImage').src = src;
+    }
+  </script>
+
+</body>
+</html>

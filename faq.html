@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - Dark</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+    background-color: #121212;
+    color: #e0e0e0;
+     }
+     .navbar, footer{
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #333;
+    padding: 12px 20px;
+     }
+     a.nav-link {
+    color: #ccc !important;
+     }
+
+     a.nav-link:hover {
+    color: #fff !important;
+     }
+    .accordion-button {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+    .accordion-body {
+      background-color: #2a2a2a;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="#">
+        <img src="dark.jpg" width="50px" class="rounded-circle" alt="Logo"> Dark</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-5">
+    <h2 class="text-center mb-4"><i class="fa-solid fa-question"></i> Pertanyaan Umum</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            Bagaimana cara memesan produk?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Klik tombol "Beli Sekarang" pada produk yang Anda inginkan, lalu lanjutkan ke keranjang untuk menyelesaikan pesanan.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Apakah bisa bayar di tempat (COD)?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Ya, kami mendukung pembayaran di tempat untuk wilayah tertentu. Silakan hubungi kami untuk konfirmasi.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            Kapan pesanan saya dikirim?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Pesanan akan dikirim dalam waktu 1-2 hari kerja setelah pembayaran diterima.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5">
+    <p>&copy; 2025 DarkClan. Semua hak dilindungi.</p>
+  </footer>
+</body>
+</html>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="jquery-3.7.1.slim.min.js"></script>
+<script type="text/javascript" src="myjs.js"></script>
+<script type="text/javascript" src="pos.js"></script>
